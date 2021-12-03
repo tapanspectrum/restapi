@@ -22,7 +22,7 @@ app.use(function (req, resp, next) {
     next();
 });
 
-app.post('/fbleads', (req, res) => {
+app.post('/', (req, res) => {
     let resdata = service.fetchFBLeads(req.body)
     let newarr = [];
       if (resdata) {
@@ -37,7 +37,7 @@ app.post('/fbleads', (req, res) => {
       }
     res.json(newarr)
 });
-app.get('/fbleads', (req, res) => {
+app.get('/', (req, res) => {
     res.json("Working !!")
 })
   
