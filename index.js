@@ -12,7 +12,7 @@ app.use(bodyParser.json({
 app.use(
     bodyParser.urlencoded({
         extended: true,
-        limit: config.REQUEST_LIMIT || '100kb',
+        limit: '100kb',
     })
 );
 app.use(function (req, resp, next) {
