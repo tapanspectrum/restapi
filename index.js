@@ -7,7 +7,7 @@ const service = new fetchFBLeadsService();
 const app = new express();
 // console.log('file path',`${root}/public`)
 app.use(bodyParser.json({
-    limit: config.REQUEST_LIMIT || '100kb'
+    limit:'100kb'
 }));
 app.use(
     bodyParser.urlencoded({
